@@ -1,0 +1,165 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: black;
+    color: #fff; */
+    font-family: sans-serif;
+}
+
+#mainblock article{
+    display: flex;
+    
+}
+
+.searchblock{
+    flex-basis: 20%;
+    /* height: max-content; */
+    background-color: lightblue;
+    padding: 1rem;
+    border-right: 1px solid #ff149338;
+}
+
+.searchblock form{
+    width: 100%;
+    padding: 0.4rem;
+    
+}
+
+.searchblock form input{
+   width: 100%;
+   padding: 10px;
+   background-color: #fff;
+   border-radius: 5px;
+   border: 1px solid #000;
+   color: #111;
+   text-transform: capitalize;
+}
+::placeholder{
+    color: #999;
+}
+
+ span{
+    position: relative;
+}
+
+ span svg{
+    position: absolute;
+    top: 1px;
+    right: 6px;
+    color: black;
+}
+
+
+.maincblock{
+    flex-basis: 80%;
+    padding: 1rem;
+    background-color: #777;
+}
+
+figure{
+    text-align: center;
+    
+}
+
+figure img{
+border-radius: 50%;
+width: 70%;
+
+}
+
+figcaption{
+    color: #ec0d57;
+}
+
+.searchBlock main p {
+  font-size: 14px;
+  padding: 5px 20px;
+  text-align: left;
+}
+.searchBlock main svg {
+  color: yellow;
+}
+
+#loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #061a178f;
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.repo_block {
+    color: #fff;
+    
+}
+
+
+.repo_block img {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.repo_block > div {
+  background: #222;
+  padding: 13px;
+  margin: 12px 7px;
+  border-radius: 2px;
+  border-bottom: 2px solid #444;
+}
+.owner_block {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.owner_block img {
+  margin: 0 3px;
+}
+
+.owner_block h4 {
+  font-size: 13px;
+  color: #999;
+  margin-left: 5px;
+}
+
+.repo_block h2 {
+  text-transform: uppercase;
+  color: yellow;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 14px 0;
+}
+
+.repo_block .footer a {
+  background: #444;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 5px 14px;
+  margin: 10px 9px 10px 0px;
+  display: inline-block;
+  border-bottom: 1px solid yellow;
+}
